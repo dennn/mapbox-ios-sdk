@@ -99,6 +99,12 @@
 *   If the view you specify is also a descendant of the UIControl class, you can use the map view’s delegate to receive notifications when your control is tapped. If it does not descend from UIControl, your view is responsible for handling any touch events within its bounds. */
 @property (nonatomic, strong) UIView *rightCalloutAccessoryView;
 
+/** Allows for custom content that can be any height or width 
+*   https://github.com/oooits72/mapbox-ios-sdk
+*
+*   Setting this means that any title, subtitle, titleView or subtitleView are ignored */
+@property (nonatomic, strong) UIView *calloutContentView; 
+
 /** Set the screen position of the layer.
 *   @param position The desired screen position.
 *   @param animated If set to `YES`, any position change is animated. */
